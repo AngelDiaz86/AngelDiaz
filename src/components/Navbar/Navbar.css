@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #000; /* Negro */
+    color: #00ff00; /* Verde */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nombre {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.botonesNavBar {
+    display: flex;
+    gap: 20px;
+}
+
+.botonNavBar {
+    text-decoration: none;
+    color: #00ff00; /* Verde */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.botonNavBar:hover {
+    color: #000; /* Cambia el color a negro en el hover */
+}

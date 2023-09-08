@@ -1,0 +1,68 @@
+
+.Tarjeta {
+    
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    
+    color: #000; /* Negro */
+}
+
+/* Estilos para la tarjeta */
+.Tarjeta {
+    position: relative;
+    width: 200px; /* Puedes ajustar el ancho según tus necesidades */
+    cursor: pointer;
+    
+  }
+  
+  .Tarjeta img {
+    width: 350px;
+    height: auto;
+    border-radius: 200px;
+    
+  }
+  
+  .Tarjeta img:hover{
+    scale: 1.1;
+    transition: 1.0s;
+    box-shadow: 0 0  30px rgb(2, 255, 23);
+  }
+  /* Estilos para la ventana modal */
+  .modal {
+    display: none; /* Oculta la ventana modal inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .textmodal{
+    color: #000;
+  }
+
+  .modal-content {
+    background-color: #195c0c;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .centered-content {
+    text-align: center;
+  }
+  

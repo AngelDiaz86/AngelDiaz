@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import React,{ Routes, Route, BrowserRouter } from "react-router-dom";
 
-function App() {
+
+import Episodios from "./components/Episodios/Episodios";
+import NavBar from "./components/Navbar/Navbar";
+import header from "./components/imgnav.jpg";
+
+import Personajes from './components/Personajes/Personajes';
+
+function RoutesApp() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+      <img className='img' src={header}></img>
     </div>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<Personajes />} />
+        <Route path='/episodes' element={<Episodios />} />
+      </Routes>
+      
+
+
+    </>
+    
+  );
+}
+function RouterWrapper() {
+  return (
+    <BrowserRouter>
+      <RoutesApp />
+    </BrowserRouter>
+    
   );
 }
 
-export default App;
+export default RouterWrapper;
